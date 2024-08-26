@@ -1,0 +1,28 @@
+.likes-wrapper{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .likee{
+        position: relative;
+        .delete-btn{
+            z-index: 99;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            color: red;
+            font-size: 18px !important;
+            
+            &:hover{
+                color: red !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    .likes-wrapper{
+        padding: 0 15px;
+    }
+}
